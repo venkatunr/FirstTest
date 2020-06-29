@@ -21,6 +21,14 @@ public class GitTest {
 	driver.get("https://www.bing.com/");
 	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	FileUtils.copyFile(src, new File("D:\\WorkSpace\\WorkOut\\File\\screenshot.png"));
+	}
+	
+	@Test
+	public void loginTest() throws IOException {
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://www.google.com/");
+	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(src, new File("D:\\WorkSpace\\File\\screenshot.png"));
 	
 	
 	}
