@@ -10,6 +10,7 @@ import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -24,7 +25,7 @@ public class GitTest {
 	}
 	
 	@Test
-	public void loginTest() throws IOException {
+	public void loginTest1() throws IOException {
 	WebDriver driver=new ChromeDriver();
 	driver.get("https://www.google.com/");
 	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
